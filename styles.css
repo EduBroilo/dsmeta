@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #102347 0%, #181818 100%);
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+a,
+a:hover,
+a:visited {
+    color: unset;
+    text-decoration: none;
+}
+
+.Logo_ {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Logo_ img {
+    width: 235px;
+}
+
+.Logo_ h1 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.Logo_ p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#Sales {
+    padding: 40px 10px;
+}
+
+.WidthCard {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.Card {
+    background-color: #283142;
+    border-radius: 10px;
+    padding: 30px 10px;
+}
+
+.Card h2 {
+    margin-bottom: 20px;
+    color: #676FFF;
+}
+
+.imputDiv {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.imput {
+    width: 100%;
+    height: 46px;
+    background-color: #1b2531;
+    border: 1px solid #384459;
+    border-radius: 5px;
+    color: #9aaabe;
+    padding: 0px 20px;
+    font-size: 18px;
+}
+
+.vendaTable {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.vendaTable thead {
+    height: 55px;
+    font-size: 16px;
+    color: #E9E9E9;
+    font-weight: 700;
+
+}
+
+.vendaTable tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CFCFCF;
+    text-align: center;
+}
+
+.vendaTable tbody tr {
+    height: 74px;
+    background-color: #283142;
+    border-top: 1px solid #5F6E82;
+}
+
+.vendaTable tbody tr:hover > tr {
+    background-color: #384459;
+}
+
+.vendaTable tbody tr:nth-child(odd) {
+    background-color: #242C3B;
+}
+
+.buttonDiv{
+    display: center;
+    justify-content: center;    
+}
+
+.Button {
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 107, 114, 0.1);
+    border: 1px solid #FF6B72;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Button img{
+    width: 19px;
+}
+
+.Date{
+    display: none;
+}
+
+.show992only {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .Date{
+        display: table-cell;
+    }
+
+    .Card{
+        padding: 35px;
+    }
+
+    .vendaTable tbody tr{
+        height: 55px;
+    }
+
+    .vendaTable tbody{
+        font-size: 18px;
+    } 
+}
+
+@media (min-width: 992px) {
+    .show992only{
+        display: table-cell;
+    }
+}
